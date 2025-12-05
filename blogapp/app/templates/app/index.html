@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foodieland — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'app/style.css' %}">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Foodieland</div>
+      <nav>
+        <a class="grow-on-hover" href="#">Home</a>
+        <a class="grow-on-hover" href="#">Recipes</a>
+        <a class="grow-on-hover" href="#">Blog</a>
+        <a class="grow-on-hover" href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Categories</h2>
+        <a class="grow-on-hover" href="#" style="background:#e9fbf7;padding:8px 12px;border-radius:8px;color:#0b2a26;text-decoration:none;font-weight:600">View All Categories</a>
+      </div>
+
+      <div class="categories-row" aria-label="Categories">
+        <div class="category"><img src="https://simply-delicious-food.com/wp-content/uploads/2022/09/Breakfast-board28.jpg" alt="Breakfast"><small>Breakfast</small></div>
+        <div class="category"><img src="https://ozkayasaglikgrubu.com/wp-content/uploads/2024/08/Vegan-and-Vegetarian_.png" alt="Vegan"><small>Vegan</small></div>
+        <div class="category"><img src="https://www.safefood.net/getmedia/94101697-3c3f-4fe1-8ae8-5b595d3814ba/medium-rare-steak.jpg?width=2000&height=1333&ext=.jpg" alt="Meat"><small>Meat</small></div>
+        <div class="category"><img src="https://www.tasteofhome.com/wp-content/uploads/2025/07/30-Summer-Desserts-That-Are-No-Bake-and-Oh-So-Easy_TOHcom23_27515_P2_MD_03_22_6b.jpg" alt="Dessert"><small>Dessert</small></div>
+        <div class="category"><img src="https://simply-delicious-food.com/wp-content/uploads/2018/07/mexican-lunch-bowls-3.jpg" alt="Lunch"><small>Lunch</small></div>
+        <div class="category"><img src="https://images.arla.com/recordid/DA888149-8D8B-4D9B-84C749958CC545B7/chocolate-bars.jpg" alt="Chocolate"><small>Chocolate</small></div>
+      </div>
+
+      <div class="title">
+        <h1>Simple and tasty recipes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetupisicing elit, sed to eiusmod tempor in0706cidunt ut labore et dolore magna aliqut enim ad minim</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://thelogic.co/wp-content/uploads/2025/02/BigMac_red-TheLogic_Illustration-P_Handout-1920x1280-1.jpg" alt="burger"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">Burger</div><div class="meta"><span>🕒 30 Minutes</span><span>🍔 Snack</span></div></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJvYXV0aCI6eyJjbGllbnRfaWQiOiJmcm9udGlmeS1maW5kZXIifSwicGF0aCI6ImloaC1oZWFsdGhjYXJlLWJlcmhhZFwvZmlsZVwvSGhleHdSaUVCYWJ0b1dFRWpUM1EuanBnIn0:ihh-healthcare-berhad:6Zk6UuetaajSDB-43bdLAoamTKKBCqQFMfjY38nWPbk?format=webp" alt="salmon"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">Fresh Lime Roasted Salmon with Ginger Sauce</div><div class="meta"><span>🕒 30 Minutes</span><span>🐟 Fish</span></div></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://www.servedfromscratch.com/wp-content/uploads/2022/02/Healthy-Banana-and-Strawberry-Oat-Pancakes-4-1-scaled.jpg" alt="pancake"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">Strawberry Oatmeal Pancake with Honey Syrup</div><div class="meta"><span>🕒 30 Minutes</span><span>🥞 Breakfast</span></div></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://www.themediterraneandish.com/wp-content/uploads/2020/01/healthy-egg-salad-recipe-8.jpg" alt="salad"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">Fresh and Healthy Mixed Mayonnaise Salad</div><div class="meta"><span>🕒 30 Minutes</span><span>🥗 Healthy</span></div></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://www.ruled.me/wp-content/uploads/2021/01/Chicken-Meatball-in-Tomato-Cream-Sauce-Featured.jpg" alt="meatballs"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">Chicken Meatballs with Cream Cheese</div><div class="meta"><span>🕒 30 Minutes</span><span>🍖 Meat</span></div></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://ih1.redbubble.net/image.5334036279.6350/flat,750x,075,f-pad,750x1000,f8f8f8.u1.webp" alt="meatballs"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">Don't forget to eat healthy food</div><div class="meta"><span>www.foodieland.com</span></div></div>
+          </div>
+        </article>
+
+
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://paleomg.com/wp-content/uploads/2018/07/EN0A5884.jpg" alt="fruit pancake"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">Fruity Pancake with Orange & Blueberry</div><div class="meta"><span>🕒 30 Minutes</span><span>🍰 Sweet</span></div></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://assets.bonappetit.com/photos/5e399f27349af3000848eb73/1:1/w_1125,h_1125,c_limit/0320-DutchOven-One-Pot-Gingery-Chicken.jpg" alt="onepot"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">The Best Easy One Pot Chicken and Rice</div><div class="meta"><span>🕒 30 Minutes</span><span>🍗 Snack</span></div></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-inner">
+            <div class="thumb"><img src="https://mccormick.widen.net/content/m8x4ukwwgb/jpeg/creamy_chicken_and_bacon_pasta_70862_1376x774_.jpeg" alt="pasta"><div class="badge">❤</div></div>
+            <div class="card-body"><div class="title">The Creamiest Creamy Chicken and Bacon Pasta</div><div class="meta"><span>🕒 30 Minutes</span><span>🍝 Noodles</span></div></div>
+          </div>
+        </article>
+
+      </div> <!-- grid -->
+
+      <div class="newsletter">
+        <div class="left">
+          <h3>Deliciousness to your inbox</h3>
+          <p>Lorem ipsum dolor sit amet, consectetupisicing elit, sed to eiusmod tempor incidunt ut labore et dolore magna aliqut enim ad minim</p>
+          <form onsubmit="return false;"><input type="email" placeholder="Your email address"><button>Subscribe</button></form>
+        </div>
+        <div style="width:260px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXCQtzG2Y6UekNijeMN4bSQzbuiE6C-u82SQ&s" alt="salad" style="width:100%;border-radius:12px;display:block"></div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div><strong>Foodieland</strong></div>
+      <div>© 2025 FOODİELAND. Powered by Nihad</div>
+      <div><a href="#" style="color:var(--muted);text-decoration:none">About us</a></div>
+    </footer>
+
+  </div>
+</body>
+</html>

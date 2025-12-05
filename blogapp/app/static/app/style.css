@@ -1,0 +1,135 @@
+:root{
+  --bg: #fafafa;
+  --white: #ffffff;
+  --accent: #2aa976;
+  --muted: #6e7b7a;
+  --card-blue: #e8fbff;
+  --shadow: 0 10px 20px rgba(6,45,36,0.04);
+}
+
+*{box-sizing:border-box}
+html, body { height: 100%; }
+
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#0b2a26;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.wrap{
+  max-width:980px;
+  margin:36px auto;
+  background:var(--white);
+  border-radius:12px;
+  padding:28px 36px;
+  border:1px solid #f2f6f6;
+}
+
+header{display:flex;align-items:center;gap:20px}
+.logo{font-weight:800;color:#111}
+nav{margin-left:auto}
+nav a{margin:0 12px;color:var(--muted);text-decoration:none;font-size:13px}
+
+/* Section layout */
+.section{padding:18px 0}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.section-head h2{margin:0;font-size:22px}
+
+/* Categories row */
+.categories-row{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  overflow:auto;
+  padding-bottom:6px;
+}
+.category{
+  width:90px;
+  height:90px;
+  background:linear-gradient(180deg,#ffffff,#fbfffd);
+  border-radius:18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 12px 30px rgba(2,30,25,0.04);
+  border:1px solid #f1f9f6;
+  flex-shrink:0;
+  padding:8px;
+  transition:transform .18s ease, box-shadow .18s ease;
+  cursor: pointer;
+}
+.category img{width:44px;height:44px;object-fit:cover;border-radius:8px;margin-bottom:6px}
+.category small{font-size:12px;color:#234a3f;text-align:center;font-weight:600}
+
+/* Title + intro */
+.title{text-align:center;margin:28px 0}
+.title h1{margin:0;font-size:28px}
+.title p{color:var(--muted);font-size:13px;margin-top:12px;max-width:720px;margin-left:auto;margin-right:auto}
+
+/* Grid of cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:10px}
+.card{border-radius:14px;overflow:visible;background:transparent}
+.card-inner{
+  background:var(--card-blue);
+  border-radius:12px;
+  padding:0 0 12px;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  transition:transform .22s ease, box-shadow .22s ease;
+}
+.thumb{height:150px;background:linear-gradient(180deg,rgba(0,0,0,0.04),transparent);position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;top:10px;right:10px;background:#fff;border-radius:18px;padding:6px;box-shadow:0 4px 8px rgba(0,0,0,0.08);font-size:13px}
+
+.card-body{padding:12px}
+.card-body .title{font-size:14px;font-weight:700;margin:0 0 8px;color:#062a26}
+.card-body .meta{display:flex;gap:12px;font-size:12px;color:var(--muted);align-items:center}
+
+/* Promo tile (green tall) — keep available for any promo card usage */
+.promo{border-radius:12px;overflow:hidden}
+.promo-inner{background:linear-gradient(180deg,#2f7b5a,#1f6548);color:#fff;padding:18px;border-radius:12px;display:flex;align-items:center;justify-content:center;height:100%}
+
+/* Newsletter — large rounded band */
+.newsletter{
+  background:linear-gradient(180deg,#eaf7fb,#f6fbfd);
+  border-radius:20px;
+  padding:40px;
+  margin-top:28px;
+  border:1px solid #dff3f2;
+  display:flex;align-items:center;gap:20px;overflow:hidden
+}
+.newsletter .left{text-align:center;flex:1}
+.newsletter h3{margin:0;font-size:22px}
+.newsletter p{color:var(--muted);font-size:13px;margin:10px auto;max-width:520px}
+.newsletter form{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.newsletter input{padding:12px 14px;border-radius:999px;border:1px solid #e2eef0;min-width:260px}
+.newsletter button{padding:10px 20px;border-radius:999px;border:0;background:#0b2a26;color:#fff;font-weight:700;cursor:pointer}
+
+footer{margin-top:28px;border-top:1px solid #ecf4f4;padding-top:18px;display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
+
+/* Small visual polish */
+.card-inner:hover{transform:translateY(-6px) scale(1.03);box-shadow:0 18px 36px rgba(6,45,36,0.08)}
+
+/* Universal hover-grow utility and selectors
+   - Use class `grow-on-hover` on any element to make it scale on hover
+   - The rules below also target common interactive elements automatically
+*/
+.grow-on-hover{transition:transform .18s ease, box-shadow .18s ease;cursor:pointer}
+.grow-on-hover:hover{transform:scale(1.06);box-shadow:0 18px 36px rgba(6,45,36,0.08)}
+
+/* Apply grow effect to common elements used in the page */
+.category, .card-inner, .card, .badge, .newsletter button, nav a{transition:transform .18s ease, box-shadow .18s ease;cursor:pointer}
+.category:hover, .card-inner:hover, .card:hover{transform:scale(1.04);box-shadow:0 18px 36px rgba(6,45,36,0.08)}
+.badge:hover{transform:scale(1.12)}
+.newsletter button:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 8px 18px rgba(11,42,38,0.12)}
+.nav-link-hover:hover, nav a:hover{transform:translateY(-2px) scale(1.03)}
+
+/* Utility: make images inside newsletter nicely clipped */
+.newsletter img{display:block;width:100%;border-radius:12px}
